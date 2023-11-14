@@ -134,6 +134,7 @@ switch(letra){
 }
 */
 
+/*
 bool possuPresencaMinima = true;
 int media = 7;
 
@@ -144,4 +145,17 @@ if(possuPresencaMinima && media >= 7)
 else
 {
     Console.WriteLine("Reprovado");
+}
+*/
+
+bool choveu = true;
+bool estaTarde = true;
+
+if(!choveu && !estaTarde)
+{
+    Console.WriteLine("Vou pedalar");
+}
+else
+{
+    Console.WriteLine("Não vou pedalar");
 }
