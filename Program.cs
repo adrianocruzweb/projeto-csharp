@@ -162,12 +162,26 @@ else
 }
 */
 
-using projeto_csharp.Models;
+// using projeto_csharp.Models;
 
-Calculadora calculadora = new Calculadora();
+// Calculadora calculadora = new Calculadora();
 
-calculadora.Somar(10, 12);
-calculadora.Subtrair(14, 8);
-calculadora.Multiplicar(10, 21);
-calculadora.Dividir(700, 70);
-calculadora.Potencia(10,2);
+// calculadora.Somar(10, 12);
+// calculadora.Subtrair(14, 8);
+// calculadora.Multiplicar(10, 21);
+// calculadora.Dividir(700, 70);
+// calculadora.Potencia(10,2);
+// calculadora.Seno(10.23);
+// calculadora.Coseno(10.23);
+// calculadora.Tangente(10.23);
+
+
+int numeroIncremento = 10;
+Console.WriteLine($"Numero Antes do incremento: {numeroIncremento}");
+numeroIncremento++;
+Console.WriteLine($"Numero Depois do incremento: {numeroIncremento}");
+
+int numeroDecremento = 20;
+Console.WriteLine($"Numero Antes do incremento: {numeroDecremento}");
+numeroDecremento--;
+Console.WriteLine($"Numero Depois do incremento: {numeroDecremento}");
