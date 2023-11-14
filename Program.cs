@@ -42,6 +42,10 @@ using System.Diagnostics.Contracts;
 
 //Cast - Casting
 //int a = Convert.ToInt32(null);
-int a = int.Parse(null);
+// int a = int.Parse(null);
+
+// Console.WriteLine(a);
+
+string a = (5).ToString();
 
 Console.WriteLine(a);
