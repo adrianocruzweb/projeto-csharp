@@ -46,6 +46,22 @@ using System.Diagnostics.Contracts;
 
 // Console.WriteLine(a);
 
-string a = (5).ToString();
+// string a = (5).ToString();
 
-Console.WriteLine(a);
+// Console.WriteLine(a);
+
+/*
+int a = 5;
+double b = a;
+*/
+
+/*
+long a = long.MaxValue;
+int b = a;
+*/
+
+int a = int.MaxValue;
+long b = a;
+
+
+Console.WriteLine(b);
