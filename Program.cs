@@ -162,9 +162,9 @@ else
 }
 */
 
-// using projeto_csharp.Models;
+using projeto_csharp.Models;
 
-// Calculadora calculadora = new Calculadora();
+Calculadora calculadora = new Calculadora();
 
 // calculadora.Somar(10, 12);
 // calculadora.Subtrair(14, 8);
@@ -176,12 +176,14 @@ else
 // calculadora.Tangente(10.23);
 
 
-int numeroIncremento = 10;
-Console.WriteLine($"Numero Antes do incremento: {numeroIncremento}");
-numeroIncremento++;
-Console.WriteLine($"Numero Depois do incremento: {numeroIncremento}");
+// int numeroIncremento = 10;
+// Console.WriteLine($"Numero Antes do incremento: {numeroIncremento}");
+// numeroIncremento++;
+// Console.WriteLine($"Numero Depois do incremento: {numeroIncremento}");
 
-int numeroDecremento = 20;
-Console.WriteLine($"Numero Antes do incremento: {numeroDecremento}");
-numeroDecremento--;
-Console.WriteLine($"Numero Depois do incremento: {numeroDecremento}");
+// int numeroDecremento = 20;
+// Console.WriteLine($"Numero Antes do incremento: {numeroDecremento}");
+// numeroDecremento--;
+// Console.WriteLine($"Numero Depois do incremento: {numeroDecremento}");
+
+calculadora.RaizQuadrada(20);

@@ -46,7 +46,13 @@ namespace projeto_csharp.Models
         {
             double anguloRad = angulo * Math.PI / 180;
             double tangente = Math.Tan(anguloRad);
-            Console.WriteLine($"O Tangente de {angulo} é {Math.Round(tangente,4)}");
+            Console.WriteLine($"A Tangente de {angulo} é {Math.Round(tangente,4)}");
+        }
+
+        public void RaizQuadrada(double x)
+        {
+            double raiz = Math.Sqrt(x);
+            Console.WriteLine($"A raiz quadrada de {x} é {Math.Round(raiz,4)}");
         }
     }
 }
