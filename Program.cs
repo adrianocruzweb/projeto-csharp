@@ -148,6 +148,7 @@ else
 }
 */
 
+/*
 bool choveu = true;
 bool estaTarde = true;
 
@@ -159,3 +160,13 @@ else
 {
     Console.WriteLine("Não vou pedalar");
 }
+*/
+
+using projeto_csharp.Models;
+
+Calculadora calculadora = new Calculadora();
+
+calculadora.Somar(10, 12);
+calculadora.Subtrair(14, 8);
+calculadora.Multiplicar(10, 21);
+calculadora.Dividir(700, 70);
