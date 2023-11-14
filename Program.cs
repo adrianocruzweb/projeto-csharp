@@ -134,14 +134,14 @@ switch(letra){
 }
 */
 
-bool eMaiorIdade = true;
-bool temAutorizacaoPais = false;
+bool possuPresencaMinima = true;
+int media = 7;
 
-if(eMaiorIdade || temAutorizacaoPais)
+if(possuPresencaMinima && media >= 7)
 {
-    Console.WriteLine("Pode entrar no evento");
+    Console.WriteLine("Aprovado");
 }
 else
 {
-    Console.WriteLine("Não pose entrar no evento");
+    Console.WriteLine("Reprovado");
 }
