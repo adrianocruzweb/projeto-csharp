@@ -23,7 +23,16 @@ Console.WriteLine("Valor da variavel altura: "+altura.ToString("0.00"));
 Console.WriteLine("Valor da variavel preco: "+preco);
 Console.WriteLine("Valor da variavel condicao: "+condicao);*/
 
-DateTime dataAtual = DateTime.Now.AddDays(5);
+// DateTime dataAtual = DateTime.Now.AddDays(5);
 
-Console.WriteLine(dataAtual);
-Console.WriteLine(dataAtual.ToString("dd/MM/yyyy"));
+// Console.WriteLine(dataAtual);
+// Console.WriteLine(dataAtual.ToString("dd/MM/yyyy"));
+
+using System.Diagnostics.Contracts;
+
+int a = 10;
+int b = 20;
+
+int c = a + b;
+
+Console.WriteLine(c);
