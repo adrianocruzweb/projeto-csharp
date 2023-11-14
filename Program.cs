@@ -10,13 +10,14 @@ pessoaUm.Apresentar();*/
 using Microsoft.Win32.SafeHandles;
 
 string apresentacao = "Olá, Seja bem vindo";
-int quantidade = 2;
-quantidade = 10;
 double altura = 1.80;
 decimal preco = 1.80M;
 bool condicao = true;
 
 Console.WriteLine(apresentacao);
+int quantidade = 2;
+Console.WriteLine("Valor da variavel quantidade: "+quantidade);
+quantidade = 10;
 Console.WriteLine("Valor da variavel quantidade: "+quantidade);
 Console.WriteLine("Valor da variavel altura: "+altura.ToString("0.00"));
 Console.WriteLine("Valor da variavel preco: "+preco);
