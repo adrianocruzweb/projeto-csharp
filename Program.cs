@@ -76,7 +76,7 @@ Console.WriteLine(b);
 
 // Console.WriteLine(a2);
 
-int quantidadeEstoque = 3;
+/*int quantidadeEstoque = 3;
 int quantidadeVenda = 0;
 bool possivelVenda = quantidadeVenda > 0 && quantidadeEstoque >= quantidadeVenda;
 
@@ -95,4 +95,33 @@ else if(possivelVenda)
 else
 {
     Console.WriteLine("Desulpe, Não temos a quantidade desejada no estoque");
+}*/
+
+
+Console.WriteLine("Digita uma Letra");
+string letra = Console.ReadLine();
+
+if(letra == "a")
+{
+    Console.WriteLine("a é uma vogal");
+}
+else if(letra == "e")
+{
+    Console.WriteLine("e é uma vogal");
+}
+else if(letra == "i")
+{
+    Console.WriteLine("i é uma vogal");
+}
+else if(letra == "o")
+{
+    Console.WriteLine("o é uma vogal");
+}
+else if(letra == "u")
+{
+    Console.WriteLine("u é uma vogal");
+}
+else
+{
+    Console.WriteLine($"{letra} não é uma vogal");
 }
