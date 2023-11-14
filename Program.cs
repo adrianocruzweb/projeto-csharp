@@ -68,10 +68,27 @@ long b = a;
 Console.WriteLine(b);
 */
 
-int a = 4 / 2 + 2;
+// int a = 4 / 2 + 2;
 
-Console.WriteLine(a);
+// Console.WriteLine(a);
 
-int a2 = 4 / (2 + 2);
+// int a2 = 4 / (2 + 2);
 
-Console.WriteLine(a2);
+// Console.WriteLine(a2);
+
+int quantidadeEstoque = 10;
+int quantidadeVenda = 5;
+bool possivelVenda = quantidadeEstoque >= quantidadeVenda;
+
+Console.WriteLine($"A quantidade de produto em estoque é {quantidadeEstoque}");
+Console.WriteLine($"A quantidade de venda do produto é {quantidadeVenda}");
+Console.WriteLine($"É possivel realizar a venda? {possivelVenda}");
+
+if(possivelVenda)
+{
+    Console.WriteLine("Venda Realizada");
+}
+else
+{
+    Console.WriteLine("Desulpe, Não temos a quantidade desejada no estoque");
+}
