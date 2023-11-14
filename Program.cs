@@ -97,31 +97,37 @@ else
     Console.WriteLine("Desulpe, Não temos a quantidade desejada no estoque");
 }*/
 
+/*
 
-Console.WriteLine("Digita uma Letra");
-string letra = Console.ReadLine();
 
-if(letra == "a")
+if(
+    letra == "a" ||
+    letra == "e" ||
+    letra == "i" ||
+    letra == "o" ||
+    letra == "u"
+)
 {
-    Console.WriteLine("a é uma vogal");
-}
-else if(letra == "e")
-{
-    Console.WriteLine("e é uma vogal");
-}
-else if(letra == "i")
-{
-    Console.WriteLine("i é uma vogal");
-}
-else if(letra == "o")
-{
-    Console.WriteLine("o é uma vogal");
-}
-else if(letra == "u")
-{
-    Console.WriteLine("u é uma vogal");
+    Console.WriteLine($"{letra} é uma vogal");
 }
 else
 {
     Console.WriteLine($"{letra} não é uma vogal");
+}
+*/
+
+Console.WriteLine("Digita uma Letra");
+string letra = Console.ReadLine();
+
+switch(letra){
+    case "a":
+    case "e":
+    case "i":
+    case "o":
+    case "u":
+        Console.WriteLine("Vogal");
+        break;
+    default:
+        Console.WriteLine("Não é vogal");
+        break;
 }
