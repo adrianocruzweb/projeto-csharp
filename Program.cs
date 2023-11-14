@@ -60,8 +60,18 @@ long a = long.MaxValue;
 int b = a;
 */
 
+/*
 int a = int.MaxValue;
 long b = a;
 
 
 Console.WriteLine(b);
+*/
+
+int a = 4 / 2 + 2;
+
+Console.WriteLine(a);
+
+int a2 = 4 / (2 + 2);
+
+Console.WriteLine(a2);
