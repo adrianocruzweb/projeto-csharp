@@ -116,6 +116,7 @@ else
 }
 */
 
+/*
 Console.WriteLine("Digita uma Letra");
 string letra = Console.ReadLine();
 
@@ -130,4 +131,17 @@ switch(letra){
     default:
         Console.WriteLine("Não é vogal");
         break;
+}
+*/
+
+bool eMaiorIdade = true;
+bool temAutorizacaoPais = false;
+
+if(eMaiorIdade || temAutorizacaoPais)
+{
+    Console.WriteLine("Pode entrar no evento");
+}
+else
+{
+    Console.WriteLine("Não pose entrar no evento");
 }
