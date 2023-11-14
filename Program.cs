@@ -170,3 +170,4 @@ calculadora.Somar(10, 12);
 calculadora.Subtrair(14, 8);
 calculadora.Multiplicar(10, 21);
 calculadora.Dividir(700, 70);
+calculadora.Potencia(10,2);
