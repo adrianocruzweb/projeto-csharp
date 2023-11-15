@@ -61,5 +61,14 @@ namespace projeto_csharp.Models
                 Console.WriteLine($"{numero} x {i} = {numero * i}");
             }
         }
+
+        public void tabuadaCincoWhile(){
+            int numero = 5;
+            int contador = 0;
+            while (contador <= 10){
+                Console.WriteLine($"{numero} x {contador} = {numero * contador}");
+                contador++;
+            }
+        }
     }
 }
