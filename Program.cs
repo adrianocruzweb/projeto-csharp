@@ -193,8 +193,9 @@ else
 //calculadora.RaizQuadrada(20);
 
 string opcao = "";
+bool exibirMenu = true;
 
-while(true)
+while(exibirMenu)
 {
     Console.Clear();
     Console.WriteLine("Digite sua opção");
@@ -217,7 +218,7 @@ while(true)
             break;
         case "4":
             Console.WriteLine("Encerrando");
-            Environment.Exit(0);
+            exibirMenu = false;
             break;
 
         default:
@@ -225,5 +226,6 @@ while(true)
             break;
     }
 
-    Console.Clear();
 }
+
+Console.WriteLine("Programa Encerrado");
