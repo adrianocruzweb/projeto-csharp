@@ -162,11 +162,11 @@ else
 }
 */
 
-using projeto_csharp.Models;
+// using projeto_csharp.Models;
 
-Calculadora calculadora = new Calculadora();
+// Calculadora calculadora = new Calculadora();
 
-calculadora.ExecuteUmaSomaComDoWhile();
+// calculadora.ExecuteUmaSomaComDoWhile();
 
 //calculadora.TabuadaCincoWhile();
 
@@ -192,3 +192,38 @@ calculadora.ExecuteUmaSomaComDoWhile();
 
 //calculadora.RaizQuadrada(20);
 
+string opcao = "";
+
+while(true)
+{
+    Console.Clear();
+    Console.WriteLine("Digite sua opção");
+    Console.WriteLine("Opção 1 - Cadastrar Cliente");
+    Console.WriteLine("Opção 2 - Buscar Cliente");
+    Console.WriteLine("Opção 3 - Apagar Cliente");
+    Console.WriteLine("Opção 4 - Encerrar");
+    opcao = Console.ReadLine();
+
+    switch (opcao)
+    {
+        case "1":
+            Console.WriteLine("Cadastrando Cliente");
+            break;
+        case "2":
+            Console.WriteLine("Buscando Cliente");
+            break;
+        case "3":
+            Console.WriteLine("Apagando Cliente");
+            break;
+        case "4":
+            Console.WriteLine("Encerrando");
+            Environment.Exit(0);
+            break;
+
+        default:
+            Console.WriteLine("Opção Invalida");
+            break;
+    }
+
+    Console.Clear();
+}
