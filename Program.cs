@@ -1,11 +1,21 @@
-﻿/*using projeto_csharp.Models;
+﻿using projeto_csharp.Models;
 
-Pessoa pessoaUm = new Pessoa();
+try
+{
+    Pessoa pessoaUm = new Pessoa();
 
-pessoaUm.Nome = "Adriano";
-pessoaUm.Idade = 35;
+    pessoaUm.Nome = "Adriano";
+    pessoaUm.Idade = 35;
 
-pessoaUm.Apresentar();*/
+    pessoaUm.Apresentar();
+}
+catch (Exception ex)
+{
+    Console.WriteLine(ex.ToString());
+    throw;
+}
+
+
 
 /*using Microsoft.Win32.SafeHandles;
 
@@ -28,7 +38,7 @@ Console.WriteLine("Valor da variavel condicao: "+condicao);*/
 // Console.WriteLine(dataAtual);
 // Console.WriteLine(dataAtual.ToString("dd/MM/yyyy"));
 
-using System.Diagnostics.Contracts;
+//using System.Diagnostics.Contracts;
 
 // int a = 10;
 // int b = 20;
@@ -253,6 +263,7 @@ foreach (int item in lista)
 }
 */
 
+/*
 List<string> lista = new List<string>();
 
 lista.Add("MS");
@@ -286,3 +297,4 @@ foreach (var item in lista)
 lista.Remove("MA");
 
 Console.WriteLine($"Tamanho da Lista {lista.Count} capacidade da Lista {lista.Capacity}");
+*/
