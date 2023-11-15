@@ -232,14 +232,18 @@ while(exibirMenu)
 Console.WriteLine("Programa Encerrado");
 */
 
-int[] lista = new int[] {10,21,35};
+int[] lista = new int[3] {10,21,35};
+
+Array.Resize(ref lista, lista.Length * 2);
 
 for (int i = 0; i < lista.Length; i++)
 {
     Console.WriteLine($"Posião - {i} lista {lista[i]}");
 }
 
+/*
 foreach (int item in lista)
 {
     Console.WriteLine($"{item}");
 }
+*/
