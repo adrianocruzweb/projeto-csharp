@@ -234,6 +234,12 @@ Console.WriteLine("Programa Encerrado");
 
 int[] lista = new int[] {10,21,35};
 
-for (int i = 0; i < lista.Length; i++){
+for (int i = 0; i < lista.Length; i++)
+{
     Console.WriteLine($"Posião - {i} lista {lista[i]}");
+}
+
+foreach (int item in lista)
+{
+    Console.WriteLine($"{item}");
 }
