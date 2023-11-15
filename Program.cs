@@ -232,19 +232,19 @@ while(exibirMenu)
 Console.WriteLine("Programa Encerrado");
 */
 
-int[] arrayInteiros = new int[3] {10,21,35};
+// int[] arrayInteiros = new int[3] {10,21,35};
 
-int[] arrayInteirosDobrado = new int[arrayInteiros.Length * 2];
+// int[] arrayInteirosDobrado = new int[arrayInteiros.Length * 2];
 
-Array.Copy(arrayInteiros, arrayInteirosDobrado, arrayInteiros.Length);
+// Array.Copy(arrayInteiros, arrayInteirosDobrado, arrayInteiros.Length);
 
 //Array.Resize(ref lista, lista.Length * 2);
 
 
-for (int i = 0; i < arrayInteirosDobrado.Length; i++)
-{
-    Console.WriteLine($"Posião - {i} lista {arrayInteirosDobrado[i]}");
-}
+// for (int i = 0; i < arrayInteirosDobrado.Length; i++)
+// {
+//     Console.WriteLine($"Posião - {i} lista {arrayInteirosDobrado[i]}");
+// }
 
 /*
 foreach (int item in lista)
@@ -252,3 +252,23 @@ foreach (int item in lista)
     Console.WriteLine($"{item}");
 }
 */
+
+List<string> lista = new List<string>();
+
+lista.Add("MS");
+lista.Add("GO");
+lista.Add("MA");
+
+Console.WriteLine("Lista exibida no FOR");
+
+for (int i = 0; i < lista.Count; i++)
+{
+    Console.WriteLine($"{lista[i]}");
+}
+
+Console.WriteLine("Lista exibida no FOREACH");
+
+foreach (var item in lista)
+{
+    Console.WriteLine($"{item}");
+}
