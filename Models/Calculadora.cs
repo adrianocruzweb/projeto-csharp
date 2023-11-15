@@ -54,5 +54,12 @@ namespace projeto_csharp.Models
             double raiz = Math.Sqrt(x);
             Console.WriteLine($"A raiz quadrada de {x} é {Math.Round(raiz,4)}");
         }
+
+        public void tabuadaCinco(){
+            int numero = 5;
+            for (int i = 0; i <= 10; i++){
+                Console.WriteLine($"{numero} x {i} = {numero * i}");
+            }
+        }
     }
 }

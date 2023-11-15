@@ -166,6 +166,9 @@ using projeto_csharp.Models;
 
 Calculadora calculadora = new Calculadora();
 
+
+calculadora.tabuadaCinco();
+
 // calculadora.Somar(10, 12);
 // calculadora.Subtrair(14, 8);
 // calculadora.Multiplicar(10, 21);
@@ -186,4 +189,5 @@ Calculadora calculadora = new Calculadora();
 // numeroDecremento--;
 // Console.WriteLine($"Numero Depois do incremento: {numeroDecremento}");
 
-calculadora.RaizQuadrada(20);
+//calculadora.RaizQuadrada(20);
+
