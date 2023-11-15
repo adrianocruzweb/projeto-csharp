@@ -166,8 +166,9 @@ using projeto_csharp.Models;
 
 Calculadora calculadora = new Calculadora();
 
+calculadora.ExecuteUmaSomaComDoWhile();
 
-calculadora.tabuadaCincoWhile();
+//calculadora.TabuadaCincoWhile();
 
 // calculadora.Somar(10, 12);
 // calculadora.Subtrair(14, 8);

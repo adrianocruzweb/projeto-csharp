@@ -1,3 +1,5 @@
+using System.Reflection;
+
 namespace projeto_csharp.Models
 {
     public class Calculadora
@@ -55,14 +57,16 @@ namespace projeto_csharp.Models
             Console.WriteLine($"A raiz quadrada de {x} é {Math.Round(raiz,4)}");
         }
 
-        public void tabuadaCinco(){
+        public void TabuadaCinco()
+        {
             int numero = 5;
             for (int i = 0; i <= 10; i++){
                 Console.WriteLine($"{numero} x {i} = {numero * i}");
             }
         }
 
-        public void tabuadaCincoWhile(){
+        public void tabuadaCincoWhile()
+        {
             int numero = 5;
             int contador = 1;
             while (contador <= 10){
@@ -74,6 +78,22 @@ namespace projeto_csharp.Models
                     break;
                 }
             }
+        }
+
+        public void ExecuteUmaSomaComDoWhile()
+        {
+            int soma = 0, numero = 0;
+
+            do
+            {
+                Console.WriteLine("Digite um número para ser somado ou (0 para sair)");
+                numero = Convert.ToInt32(Console.ReadLine());
+
+                soma +=numero;
+
+            }while(numero != 0);
+
+            Console.WriteLine($"A soma deu: {soma}");
         }
     }
 }
