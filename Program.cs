@@ -261,10 +261,20 @@ lista.Add("MA");
 
 Console.WriteLine("Lista exibida no FOR");
 
+Console.WriteLine($"Tamanho da Lista {lista.Count} capacidade da Lista {lista.Capacity}");
+
+lista.Add("SP");
+
 for (int i = 0; i < lista.Count; i++)
 {
     Console.WriteLine($"{lista[i]}");
 }
+
+Console.WriteLine($"Tamanho da Lista {lista.Count} capacidade da Lista {lista.Capacity}");
+
+lista.Add("MG");
+
+Console.WriteLine($"Tamanho da Lista {lista.Count} capacidade da Lista {lista.Capacity}");
 
 Console.WriteLine("Lista exibida no FOREACH");
 
@@ -272,3 +282,7 @@ foreach (var item in lista)
 {
     Console.WriteLine($"{item}");
 }
+
+lista.Remove("MA");
+
+Console.WriteLine($"Tamanho da Lista {lista.Count} capacidade da Lista {lista.Capacity}");
