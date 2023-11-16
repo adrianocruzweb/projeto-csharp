@@ -1,6 +1,6 @@
 ﻿using projeto_csharp.Models;
 
-try
+/*try
 {
     Pessoa pessoaUm = new Pessoa();
 
@@ -14,9 +14,24 @@ catch (Exception ex)
 {
     Console.WriteLine(ex.ToString());
     throw;
-}
+}*/
 
+Pessoa p1 = new Pessoa();
+p1.Nome = "Adriano";
+p1.Idade = 35;
 
+Pessoa p2 = new Pessoa();
+p2.Nome = "Miguel";
+p2.Idade = 38;
+
+Curso curso1 = new Curso();
+curso1.Nome = "Ingles";
+curso1.Aluno = new List<Pessoa>();
+
+curso1.AdicionarAluno(p1);
+curso1.AdicionarAluno(p2);
+
+curso1.ListarAlunos();
 
 /*using Microsoft.Win32.SafeHandles;
 
