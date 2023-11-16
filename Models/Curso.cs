@@ -24,5 +24,14 @@ namespace projeto_csharp.Models
         {
             return Aluno.Remove(aluno);
         }
+
+        public void ListarAlunos()
+        {
+            foreach (var aluno in Aluno)
+            {
+                Console.WriteLine($"{aluno.Nome} - {aluno.Idade}");
+            }
+        }
+
     }
 }
