@@ -19,5 +19,10 @@ namespace projeto_csharp.Models
         {
             return Aluno.Count();
         }
+
+        public bool RemoverAluno(Pessoa aluno)
+        {
+            return Aluno.Remove(aluno);
+        }
     }
 }
