@@ -29,7 +29,7 @@ namespace projeto_csharp.Models
         {
             foreach (var aluno in Aluno)
             {
-                Console.WriteLine($"{aluno.Nome} - {aluno.Idade}");
+                Console.WriteLine($"{aluno.NomeCompleto}");
             }
         }
 
