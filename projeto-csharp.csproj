@@ -6,6 +6,8 @@
     <RootNamespace>projeto_csharp</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <NoWarn>CS8618</NoWarn>
+    <NoWarn>CS0472</NoWarn>
   </PropertyGroup>
 
 </Project>
