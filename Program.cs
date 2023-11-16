@@ -16,11 +16,11 @@ catch (Exception ex)
     throw;
 }*/
 
-Pessoa p1 = new Pessoa("Adriano", "Cruz");
+Pessoa p1 = new Pessoa(nome: "Adriano", sobrenome: "Cruz");
 //p1.Nome = "Adriano";
 //p1.Idade = 35;
 
-Pessoa p2 = new Pessoa("Miguel", "Manhaes");
+Pessoa p2 = new Pessoa(nome: "Miguel", sobrenome: "Manhaes");
 //p2.Nome = "Miguel";
 //p2.Idade = 38;
 
