@@ -5,6 +5,7 @@ try
     Pessoa pessoaUm = new Pessoa();
 
     pessoaUm.Nome = "Adriano";
+    pessoaUm.Sobrenome = "Cruz de Oliveira";
     pessoaUm.Idade = 35;
 
     pessoaUm.Apresentar();

@@ -3,12 +3,10 @@ namespace projeto_csharp.Models
     public class Pessoa
     {
         private string _nome;
+        private int _idade;
         public string Nome
         {
-            get
-            {
-                return _nome.ToUpper();
-            }
+            get => _nome.ToUpper();
             set
             {
                 if(value == null)
@@ -19,7 +17,26 @@ namespace projeto_csharp.Models
                 _nome = value;
             }
         }
-        public int Idade { get; set; }
+
+        public string Sobrenome { get; set; }
+
+        public string NomeCompleto => Nome+" "+Sobrenome.ToUpper();
+        public int Idade
+        {
+            get => _idade;
+
+
+            set
+            {
+                if(value == null || value < 1)
+                {
+                    throw new ArgumentException("Idade precisa maior que 0 ou não pode ser vazia");
+                }
+
+                _idade = value;
+            }
+
+        }
 
         public void Apresentar()
         {
@@ -29,7 +46,7 @@ namespace projeto_csharp.Models
                 $"{Nome}, e tenho " +
                 $"{Idade} anos"
             );*/
-            Console.WriteLine($"Olá!\nMeu nome é {Nome}\nMinha idade é {Idade} anos");
+            Console.WriteLine($"Olá!\nMeu nome é {NomeCompleto}\nMinha idade é {Idade} anos");
         }
     }
 }
