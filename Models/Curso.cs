@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 
 namespace projeto_csharp.Models
@@ -27,9 +28,17 @@ namespace projeto_csharp.Models
 
         public void ListarAlunos()
         {
-            foreach (var aluno in Aluno)
+            /*foreach (var aluno in Aluno)
             {
                 Console.WriteLine($"{aluno.NomeCompleto}");
+            }*/
+
+            Console.WriteLine($"Os alunos do curso {Nome}");
+
+            for(int count = 0; count < Aluno.Count; count++)
+            {
+                string concat = "Nº " + count + " - " + Aluno[count].NomeCompleto;
+                Console.WriteLine($"{concat}");
             }
         }
 
