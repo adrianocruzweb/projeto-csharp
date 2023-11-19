@@ -16,22 +16,28 @@ catch (Exception ex)
     throw;
 }*/
 
-Pessoa p1 = new Pessoa(nome: "Adriano", sobrenome: "Cruz");
+using projeto_csharp.Models;
+
+Generico generico = new Generico();
+
+generico.ImprimeDados();
+
+//Pessoa p1 = new Pessoa(nome: "Adriano", sobrenome: "Cruz");
 //p1.Nome = "Adriano";
 //p1.Idade = 35;
 
-Pessoa p2 = new Pessoa(nome: "Miguel", sobrenome: "Manhaes");
+//Pessoa p2 = new Pessoa(nome: "Miguel", sobrenome: "Manhaes");
 //p2.Nome = "Miguel";
 //p2.Idade = 38;
 
-Curso curso1 = new Curso();
+/*Curso curso1 = new Curso();
 curso1.Nome = "Ingles";
 curso1.Aluno = new List<Pessoa>();
 
 curso1.AdicionarAluno(p1);
 curso1.AdicionarAluno(p2);
 
-curso1.ListarAlunos();
+curso1.ListarAlunos();*/
 
 /*using Microsoft.Win32.SafeHandles;
 
