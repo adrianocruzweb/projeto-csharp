@@ -37,8 +37,9 @@ namespace projeto_csharp.Models
 
             for(int count = 0; count < Aluno.Count; count++)
             {
-                string concat = "Nº " + count + " - " + Aluno[count].NomeCompleto;
-                Console.WriteLine($"{concat}");
+                //string concat = "Nº " + count + " - " + Aluno[count].NomeCompleto;
+                string concat = $"Nº {count} - {Aluno[count].NomeCompleto}";
+                Console.WriteLine(concat);
             }
         }
 
