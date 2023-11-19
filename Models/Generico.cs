@@ -11,12 +11,12 @@ namespace projeto_csharp.Models
         public void ImprimeDados()
         {
 
-            CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-US");
+            CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
             decimal valor = 1582.40M;
 
 
 
-            Console.WriteLine($"{valor:C}");
+            Console.WriteLine(valor.ToString("C", CultureInfo.CreateSpecificCulture("en-US")));
         }
     }
 }
