@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Globalization;
 
 namespace projeto_csharp.Models
 {
@@ -9,7 +10,11 @@ namespace projeto_csharp.Models
     {
         public void ImprimeDados()
         {
-            decimal valor = 82.40M;
+
+            CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-US");
+            decimal valor = 1582.40M;
+
+
 
             Console.WriteLine($"{valor:C}");
         }
