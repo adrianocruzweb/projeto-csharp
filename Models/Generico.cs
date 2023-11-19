@@ -49,6 +49,10 @@ namespace projeto_csharp.Models
 
             //ToShortTimeString mostra somente a hora
             Console.WriteLine(dataAtual.ToShortTimeString());
+
+            DateTime dataTentativa = DateTime.Parse("19/10/1969");
+
+            Console.WriteLine(dataTentativa.ToShortDateString());
         }
     }
 }
