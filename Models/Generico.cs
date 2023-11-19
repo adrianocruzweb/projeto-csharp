@@ -53,6 +53,19 @@ namespace projeto_csharp.Models
             DateTime dataTentativa = DateTime.Parse("19/10/1969");
 
             Console.WriteLine(dataTentativa.ToShortDateString());
+
+            string dataVarivel = "2020-12-17 14:00";
+
+            //tenta fazer o Parse e retorna uma data "01/01/0001 00:00:00" mesmo se não conseguir
+            DateTime.TryParseExact(
+                dataVarivel,
+                "yyyy-MM-dd HH:mm",
+                CultureInfo.InvariantCulture,
+                DateTimeStyles.None,
+                out DateTime data
+            );
+
+            Console.WriteLine(data);
         }
     }
 }
