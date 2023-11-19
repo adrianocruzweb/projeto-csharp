@@ -11,9 +11,8 @@ namespace projeto_csharp.Models
         public void ImprimeDados()
         {
 
-            CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
-            decimal valor = 1582.40M;
-
+            /*CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
+            decimal valor = 1582.40M;*/
 
             /*
                 se eu coloco somente esse trecho "C" com ou sem numero ele reperesenta somente a formatação
@@ -21,7 +20,7 @@ namespace projeto_csharp.Models
                 reperesenta as casas decimais, co "CurrentInfo...." ele represeta uma personalização pontual
                 do tipo de moeda 'Dolar'
             */
-            Console.WriteLine(valor.ToString("C8", CultureInfo.CreateSpecificCulture("en-US")));
+            /*Console.WriteLine(valor.ToString("C8", CultureInfo.CreateSpecificCulture("en-US")));
 
             Console.WriteLine(valor.ToString("C8"));
 
@@ -35,7 +34,21 @@ namespace projeto_csharp.Models
 
             int numero = 121212;
 
-            Console.WriteLine(numero.ToString("##-##-##"));
+            Console.WriteLine(numero.ToString("##-##-##"));*/
+
+            DateTime dataAtual = DateTime.Now;
+
+            //horas em formato 24:00
+            Console.WriteLine(dataAtual.ToString("dd/MM/yyy HH:mm"));
+
+            //horas em formato AM/PM (hh)
+            Console.WriteLine(dataAtual.ToString("dd/MM/yyy hh:mm"));
+
+            //ToShortDateString mostra somente a data
+            Console.WriteLine(dataAtual.ToShortDateString());
+
+            //ToShortTimeString mostra somente a hora
+            Console.WriteLine(dataAtual.ToShortTimeString());
         }
     }
 }
