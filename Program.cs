@@ -24,7 +24,9 @@ Generico generico = new Generico();
 
 //generico.LeituraArquivo();
 
-generico.MetodoComExcecao();
+//generico.MetodoComExcecao();
+
+generico.ManipulandoFila();
 
 //Pessoa p1 = new Pessoa(nome: "Adriano", sobrenome: "Cruz");
 //p1.Nome = "Adriano";

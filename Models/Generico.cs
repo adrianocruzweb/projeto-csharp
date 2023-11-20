@@ -106,5 +106,40 @@ namespace projeto_csharp.Models
                 Console.WriteLine($"{ex}");
             }
         }
+
+        public void ManipulandoFila()
+        {
+            Queue<int> fila = new Queue<int>();
+
+            fila.Enqueue(2);
+            fila.Enqueue(9);
+            fila.Enqueue(69);
+            fila.Enqueue(231);
+
+            foreach (int itemFila in fila)
+            {
+                Console.WriteLine(itemFila);
+            }
+
+            Console.WriteLine("Fim imprime fila");
+
+            Console.WriteLine("Remove um elemento da fila");
+
+            fila.Dequeue();
+
+            fila.Enqueue(10);
+
+            Console.WriteLine("insere mais uma elemento na fila");
+
+            Console.WriteLine("Inicio imprime fila (2)");
+
+            foreach (int itemFila in fila)
+            {
+                Console.WriteLine(itemFila);
+            }
+
+            Console.WriteLine("Fim imprime fila (2)");
+        }
+
     }
 }
