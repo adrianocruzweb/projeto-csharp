@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Globalization;
+using System.Net.WebSockets;
 
 namespace projeto_csharp.Models
 {
@@ -176,6 +177,27 @@ namespace projeto_csharp.Models
 
             Console.WriteLine($"Removendo um item do Dicionario - {dicionario.Remove("BA2")}");
 
+            System.Console.WriteLine("---------------------");
+
+            dicionario["BA"] = "Bahia - Alterado";
+
+            foreach (var item in dicionario)
+            {
+                Console.WriteLine($"Chave - {item.Key} Valor - {item.Value}");
+            }
+
+            string chave = "BA";
+
+            System.Console.WriteLine($"Verificando a chave = {chave}");
+
+            if(dicionario.ContainsKey(chave))
+            {
+                System.Console.WriteLine($"a chave ja existe - {chave}");
+            }
+            else
+            {
+                System.Console.WriteLine($"a chave - {chave} não existe é seguro inserir");
+            }
 
         }
 
