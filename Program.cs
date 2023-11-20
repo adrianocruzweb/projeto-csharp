@@ -26,7 +26,11 @@ Generico generico = new Generico();
 
 //generico.MetodoComExcecao();
 
-generico.ManipulandoFila();
+//generico.ManipulandoFila();
+
+//generico.ManipulandoPilha();
+
+generico.ManipulandoDicionario();
 
 //Pessoa p1 = new Pessoa(nome: "Adriano", sobrenome: "Cruz");
 //p1.Nome = "Adriano";

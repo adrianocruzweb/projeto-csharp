@@ -141,5 +141,43 @@ namespace projeto_csharp.Models
             Console.WriteLine("Fim imprime fila (2)");
         }
 
+        public void ManipulandoPilha()
+        {
+            Stack<int> pilha = new Stack<int>();
+
+            pilha.Push(2);
+            pilha.Push(4);
+            pilha.Push(5);
+            pilha.Push(10);
+
+            foreach(int item in pilha)
+            {
+                Console.WriteLine(item);
+            }
+
+            Console.WriteLine($"Retirando um item da pilha - {pilha.Pop()}");
+        }
+
+        public void ManipulandoDicionario()
+        {
+            Dictionary<string,string> dicionario = new Dictionary<string,string>();
+
+            dicionario.Add("MS","Mato Grosso do Sul");
+            dicionario.Add("PA","Pará");
+            dicionario.Add("MA","Manaus");
+            dicionario.Add("SP","São Paulo");
+            dicionario.Add("BA","Bahia");
+            dicionario.Add("BA2","Bahia");
+
+            foreach (var item in dicionario)
+            {
+                Console.WriteLine($"Chave - {item.Key} Valor - {item.Value}");
+            }
+
+            Console.WriteLine($"Removendo um item do Dicionario - {dicionario.Remove("BA2")}");
+
+
+        }
+
     }
 }
