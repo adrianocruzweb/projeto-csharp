@@ -67,5 +67,23 @@ namespace projeto_csharp.Models
 
             Console.WriteLine(data);
         }
+
+        public void LeituraArquivo()
+        {
+
+            try
+            {
+                string[] linhasArquivo = File.ReadAllLines("Arquivos/document_ForRead.txt");
+
+                foreach (var item in linhasArquivo)
+                {
+                    Console.WriteLine(item);
+                }
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine($"Ocorreu um erro genérico - {ex.Message}");
+            }
+        }
     }
 }

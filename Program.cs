@@ -20,7 +20,9 @@ using projeto_csharp.Models;
 
 Generico generico = new Generico();
 
-generico.ImprimeDados();
+//generico.ImprimeDados();
+
+generico.LeituraArquivo();
 
 //Pessoa p1 = new Pessoa(nome: "Adriano", sobrenome: "Cruz");
 //p1.Nome = "Adriano";
