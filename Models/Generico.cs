@@ -80,6 +80,10 @@ namespace projeto_csharp.Models
                     Console.WriteLine(item);
                 }
             }
+            catch(FileNotFoundException ex)
+            {
+                Console.WriteLine($"Arquivo não encontrado - {ex.Message}");
+            }
             catch(Exception ex)
             {
                 Console.WriteLine($"Ocorreu um erro genérico - {ex.Message}");
