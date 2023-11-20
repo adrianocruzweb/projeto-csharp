@@ -93,5 +93,18 @@ namespace projeto_csharp.Models
                 Console.WriteLine("Chegou até aqui");
             }
         }
+
+        public void MetodoComExcecao(){
+
+            try
+            {
+                throw new Exception("Aqui Aconteceu Exceção");
+
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine($"{ex}");
+            }
+        }
     }
 }

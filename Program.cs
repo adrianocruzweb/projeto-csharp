@@ -22,7 +22,9 @@ Generico generico = new Generico();
 
 //generico.ImprimeDados();
 
-generico.LeituraArquivo();
+//generico.LeituraArquivo();
+
+generico.MetodoComExcecao();
 
 //Pessoa p1 = new Pessoa(nome: "Adriano", sobrenome: "Cruz");
 //p1.Nome = "Adriano";
