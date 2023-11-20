@@ -73,7 +73,7 @@ namespace projeto_csharp.Models
 
             try
             {
-                string[] linhasArquivo = File.ReadAllLines("Arquivos/document_ForRead.txt");
+                string[] linhasArquivo = File.ReadAllLines("Arquivos/documentForRead.txt");
 
                 foreach (var item in linhasArquivo)
                 {
@@ -87,6 +87,10 @@ namespace projeto_csharp.Models
             catch(Exception ex)
             {
                 Console.WriteLine($"Ocorreu um erro genérico - {ex.Message}");
+            }
+            finally
+            {
+                Console.WriteLine("Chegou até aqui");
             }
         }
     }
